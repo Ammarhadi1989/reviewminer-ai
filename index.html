@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
@@ -25,7 +25,7 @@
         .container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
 
@@ -64,12 +64,14 @@
             padding: 16px 36px;
             border-radius: 8px;
             text-decoration: none;
-            transition: background 0.2s;
+            transition: background 0.2s, transform 0.2s;
+            box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.4);
         }
 
-            .cta-button:hover {
-                background: var(--primary-hover);
-            }
+        .cta-button:hover {
+            background: var(--primary-hover);
+            transform: translateY(-2px);
+        }
 
         .features {
             display: grid;
@@ -80,3 +82,114 @@
         }
 
         .card {
+            background-color: var(--card-bg);
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            color: #60a5fa;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+
+        .pricing {
+            background-color: var(--card-bg);
+            border: 2px solid var(--primary);
+            border-radius: 16px;
+            padding: 40px 20px;
+            margin-top: 40px;
+            max-width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .price {
+            font-size: 3rem;
+            font-weight: 800;
+            margin: 15px 0;
+        }
+
+        .price span {
+            font-size: 1rem;
+            color: var(--text-muted);
+            font-weight: normal;
+        }
+
+        ul.benefits {
+            text-align: left;
+            margin: 25px 0;
+            padding: 0 0 0 20px;
+            color: var(--text-muted);
+        }
+
+        ul.benefits li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            margin-top: 60px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="badge">🚀 Chrome-tillägg för AI-marknadsanalys</div>
+        <h1>Vaska fram affärsidéer ur dina konkurrenters recensioner</h1>
+        <p class="lead">
+            ReviewMiner AI analyserar kundrecensioner från Trustpilot och Amazon med hjälp av GPT-4o. Förvandla kundernas klagomål till din nästa framgångsrika produkt.
+        </p>
+
+        <a href="https://reviewminer-ai.lemonsqueezy.com/checkout/buy/f3faed82-b0e1-4ca1-be10-fcd862bc40bd" target="_blank" class="cta-button">
+            Skaffa ReviewMiner AI Pro (89 kr/mån)
+        </a>
+
+        <div class="features">
+            <div class="card">
+                <h3>🚨 Smärtpunkter & Klagomål</h3>
+                <p>Hitta automatiskt vad kunder stör sig mest på hos befintliga produkter och tjänster.</p>
+            </div>
+            <div class="card">
+                <h3>💡 Saknade Funktioner</h3>
+                <p>Upptäck funktioner som kunderna explicit efterfrågar men som konkurrenterna saknar.</p>
+            </div>
+            <div class="card">
+                <h3>📈 Validerade Affärsidéer</h3>
+                <p>Generera konkreta produkt- och tjänsteförslag baserade på verklig marknadsdata.</p>
+            </div>
+        </div>
+
+        <div class="pricing">
+            <h2>ReviewMiner AI Pro</h2>
+            <div class="price">89 kr <span>/ månad</span></div>
+            <p style="color: var(--text-muted);">Obegränsad AI-analys för entreprenörer och produktägare.</p>
+            
+            <ul class="benefits">
+                <li>⚡ Obegränsat antal analyser</li>
+                <li>🎯 Djupgående analys med GPT-4o</li>
+                <li>🔑 Omedelbar leverans av licensnyckel</li>
+                <li>🛡️ Avsluta när som helst</li>
+            </ul>
+
+            <a href="https://reviewminer-ai.lemonsqueezy.com/checkout/buy/f3faed82-b0e1-4ca1-be10-fcd862bc40bd" target="_blank" class="cta-button" style="width: 80%;">
+                Uppgradera nu
+            </a>
+        </div>
+
+        <footer>
+            &copy; 2026 ReviewMiner AI. Alla rättigheter förbehållna.
+        </footer>
+    </div>
+
+</body>
+</html>
